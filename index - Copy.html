@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="cssimage.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    </head>
+    <body>
+        <section class="home">
+            <nav>
+               <h2>PERSONAL<span>blog</span></h2>
+                <ul class="ne">
+                    <li>
+                        <a href="#">hom</a>
+                    <li>
+                        <a href="#About">about</a>
+                    <li>
+                        <a href="#cotainarr">project</a>
+                    <li>
+                        <a href="#contanere">contact</a>
+
+                </ul>
+
+            </nav>
+            <div class="content">
+                <div class="texte">
+                    <h2>VIRTUAL UNIVERSITY
+                        <span>TEAM</span>
+                    </h2>
+                    <h1>
+                        <span>Douiri</span></h1>
+                    <h3>نقوم بتطوير مواقع الويب</h3>
+                </div>
+                <div class="conimg">
+                    <img src="rr.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!--skills-->
+        <section id="About">
+            <div class="containers">
+                <div class="heading">
+
+                    <h2>A<span class="text">Bout</span></h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="iteam">
+                        <img src="a.png" alt="mans">
+                        <h3>Mansour</h3>
+                        <p>gfddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    </div>
+                    <div class="iteam">
+                        <img src="d.png" alt="mar">
+                        <h3>Mariam</h3>
+                        <p>dddfgdtryuijdfdddd</p>
+                    </div>
+                    <div class="iteam">
+                        <img src="c.png" alt="mohammad">
+                        <h3>Mohammad</h3>
+                        <p>gddddtytrgedddddd</p>
+                    </div>
+                    <div class="iteam">
+                        <img src="a.png" alt="anas">
+                        <h3>Anas</h3>
+                        <p>rtythhrhpoliuytgddddddddddddddddddddddddddd</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">sun</a>
+        </section>
+
+        <section id="cotainarr">
+
+            <div class="containere">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="OIP (1).jpg" alt="">
+                            <div class="tex">
+                                <h3>PERSONAL BLOG SITE
+                                </h3>
+                                <a href="#">fff</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="OIP.jpg" alt="">
+                          <div class="tex">
+                            <h3>ONLINE STORE WEBSITE
+                            </h3>
+                           
+                            <a href="#"></a>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><img src="c.png" alt="">
+                          <div class="tex">
+                            <h3>
+                            </h3>
+                            <a href="#">fff</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    // Optional parameters
+
+                    autoplay: {
+                        delay: 5000,
+                        disableoninteraction: false
+                    },
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+              } );
+            </script>
+        </section>
+
+        <section id="contanere">
+            <div class="contanere">
+                <h2>contact</h2>
+                <div class="rowe">
+                    <img src="ph.png" alt="contact">
+                    <form action="https://formsubmit.co/mariamkarkar994349@gmail.com" method="post">
+                        <input type="text" name="name" id="Name" placeholder="Name" required="required">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                            required="required">
+                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+     
+
+        <footer id="footer">
+            <p>&copy; 2023 All rights reserved</p>
+        </footer>
+
+    </body>
+</html>

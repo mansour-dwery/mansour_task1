@@ -1,0 +1,374 @@
+:root{
+    --onecoler:red;
+    --secadcoler:black;
+    --threecoler:rgb(243, 157, 9);
+   --padding:0px;   
+}
+@keyframes ann {
+0%{
+    transform: translateX(0);
+}
+50%{
+    transform: translateX(20px);
+
+}
+100%{
+    transform: translateX(0);
+}
+    
+}
+*{/*حصائص افتراضية*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+html{
+    font-size: 16px;
+color:rgb(250, 250, 252);
+background-color: rgb(37, 37, 37);
+
+}
+.home{
+    width: 100%;/*عرض الصفحة بقياس كامل*/
+    height: 100vh;/*طول المحتوى يساوي طول الصفحة الاولية*/
+    background-color:;
+    display: flex;/*1*/
+    flex-direction: column;/*2*//*تعمل الخدوتين واحد واثنين على السماح للعناصر بالظهور فوق بعضها البعض*/
+   
+}
+    
+
+span{color: var(--onecoler);}/*عنصر محاييد للتحكم بلون قسم من الكلمة*/
+
+h2{
+    font-size: 40px;
+    
+    letter-spacing: 1px;/*يعطي فراغ بين احرف الكلمات*/
+    cursor: pointer;/*لتغيير شكل الفارة عند المرور على الاسم*/
+}
+nav{
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+    
+    display: flex;/**/
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+
+
+}
+nav ul li{
+    list-style-type: none;/*لحذف رموز القائمة*/
+    display: inline-block/*لاظهار كل عناصر القائمة على سطر واحد*/;
+    margin: 20px;/*لتحديد الفراغات بين العناصر*/
+
+}
+nav ul li a {
+    color: rgb(247, 246, 246);
+    text-decoration: none;/*لحذف السطر تحت الروابط*/
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+nav ul li a:hover{/*عندما نمرر الفارة علة عناصر القائمة  يحدث تغيير بحسب الكود*/
+color: rgb(245, 98, 7);
+transition: 0.4s;
+transform: :scale(2);
+
+}
+.btn{
+    background-color: darkgoldenrod;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;/*لتغيير شكل الزر */
+    padding: 5px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.btn:hover{
+    color: blueviolet;
+    transition: 0.4s;
+    background-color: transparent;
+    border: 2px solid red;/*لجعل العمصر داخل جدود بشكل صندوق*/
+ 
+}
+.content{
+    border-radius:90px;
+    border:red;
+    flex-grow: 1;/*تسمح باشغال كامل الصفحة المتبقية*/
+    display: flex;/*للكتابة فوق العنصر*/
+    align-items:center;/*لاظهار العناصر في وسط الكونتينت*/
+    background-color: rgb(6, 6, 6);
+
+}
+.texte{
+position: relative;/*1*/
+bottom: 60px;    /*2*//*الخطوة واحد تنين تستخدم لرفع محتويات الكلاس الى الاعلى*/
+background-color: black;
+}
+h1{
+    font-size: 15px;
+    margin: 7px;
+    background-color: black
+}
+h2 {
+  padding;8px
+  background-color: black
+
+}h3{
+    color: rgb(20, 20, 35);
+    letter-spacing: 2px
+
+}
+.coimg{
+
+}
+
+
+
+.imag2{
+width:35% ;padding: 5%;
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(37, 37, 37);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+
+
+  
+}
+#groub{
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    background-color: rgb(219, 218, 218) 2px;
+    color: aqua;
+    border-bottom: 2px;
+
+}
+#dena{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    background-color: rgb(219, 218, 218) 2px;
+    color: aqua;
+    border-bottom: 2px;
+
+}
+
+.phh{
+width: 40%;
+}
+.dd{
+    width: 40%;
+}
+.ee{
+    width: 20%;
+    height:50% ;
+}
+#contanere{
+    padding: 4rem 14rem;
+
+   }
+   .contanere{
+    max-width: 1000px;
+    margin: auto;
+    padding: 4rem 1rem 3rem;
+    height: 100%;
+   }
+  
+   
+   .rowe {
+    margin-top: 1rem;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    background: #e8eaeb;
+    box-shadow: 3px 300px 20px  rgba(#0c7ae8);
+    padding: 2rem 2rem;
+    border-radius: 9px;
+    text-align: center;
+    column-gap: 3rem;}
+
+    .rowe input,.rowe textarea{
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #e7ecf1;
+        border: 1px solid #0b045d;
+        outline: none;
+      }
+      .rowe img {
+        width: 350px; 
+        padding: 1rem 4rem;
+        animation-name: ann ;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    
+      }
+      #footer{
+        background-color: #cdcdcd;
+        color:#dd1111;
+        padding: 0.3rem 0.3rem;
+        text-align: center;
+      }
+      .content{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+        max-width: 1000px;
+        margin: auto;
+        padding: 5rem 1rem 0;
+        height: 100%;
+        background-color: #030303;
+    }
+    .content-text{
+        margin-bottom:4rem ;
+    }
+    .content img{
+        max-width:500px;
+    }
+    h1{
+        font-size: 80px;
+        color: var(--primarycolor);
+        margin-top:10px ;
+    }
+    h5{
+        color: #940202;
+    }
+    p{
+        color: rgb(6, 6, 6);
+        margin: 39px 5px;
+    }
+     .btn-primary{
+        margin: 2rem 2rem;
+        font-size: 14px;
+        padding: 8px 20px;
+        background-color: #5a5a5a;
+        color: #f9f7f7;
+        cursor:pointer ;
+        font-weight: 500;
+        border-radius: 5px ;
+        transition: all 0.3s ease;
+     }
+     .btn-primary:hover{
+        background-color: #11026f;
+        transform: scale(1.2);
+     }
+
+
+
+      
+ 
+/*skills*/
+.containers , #contanere {
+    padding: 1rem 12rem;
+    background: linear-gradient( rgb(25, 19, 47), );
+  }
+  
+  .heading{
+    padding: 1rem 2rem;
+  }
+ h2 ,#contact{
+     text-align: center;
+     font-size: 40px;
+     color:var(--primarycolor);
+     font-weight: 500;
+     letter-spacing: 1px;
+ 
+  }
+  .heading span {
+    color: #f80909;
+    font-weight: bold;
+  }
+  .heading hr{
+    width:100px ;
+    height: 3px;
+    border: none;
+    margin: 5px auto 0;
+    background-color: #880404;
+  }
+#services.heading{
+    display:  grid;
+    justify-content: center;
+    align-items: center; 
+  }
+ 
+  /*services row*/
+ .row{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top  :1 rem ;
+    text-align: center;
+    column-gap: 3rem;
+    row-gap: 0.5rem;
+  
+  }
+.row img {
+    width: 65px;
+    
+  }
+  
+  .iteam{
+background-color: #b1b2b3;
+padding: 30px 10px;
+box-shadow: 3px 3px 3px #79797b;
+border-radius: 30px;
+transition: all 0.6s ease;
+  }
+ .iteam:hover{
+    transform: scale(1.2);
+  }
+  h3{
+    font-size: 28px;
+    color: var(--primarycolor);
+    margin: 25px 0;
+  }
+
+  .containere{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+  
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 70%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 40%;
+    
+    margin: auto;
+}
+.swiper-slide .tex{
+    width: fit-content;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+
+}
+
+
+.heading{
+    animation-name: ann ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
